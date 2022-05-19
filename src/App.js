@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom';
 import Doctor from './container/Doctors/Doctor';
 import About from './container/About/About';
 import Contact from './container/Contact/Contact';
+import Login from './container/Login/Login';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route exact path={"/Doctors"} component={Doctor} />
                 <Route exact path={"/About"} component={About} />
                 <Route exact path={"/Contact"} component={Contact} />
+                <Route exact path={"/Login"} component={Login} />
             </switch>
             <Footer />
         </>
