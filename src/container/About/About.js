@@ -1,6 +1,28 @@
 import React from 'react';
+import Card from '../../components/Card/Card';
+
 
 function About(props) {
+
+    const data = [
+        {
+            name: "Nikunj Dudhat",
+            post: "Main compounder"
+        },
+        {
+            name: "Harsh Sheliya",
+            post: "Sub compounder"
+        },
+        {
+            name: "Mitul Beladiya",
+            post: "Watch man"
+        },
+        {
+            name: "Nikunj b. Dudhat",
+            post: "Receptionist"
+        }
+    ]
+
     return (
         <main id="main">
             <section id="about" className="about">
@@ -16,6 +38,13 @@ function About(props) {
                                 rutrum neque, quis tincidunt arcu pretium ac. Suspendisse sem </p>
                         </div>
                     </div>
+
+                    <div className="row">
+                        <Card 
+                            cardData = {data}
+                        />
+                    </div>
+
                 </div>
             </section>
         </main>
